@@ -1,0 +1,21 @@
+.navbar, .btn-group, .titrecarte,.listo
+{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.lead, h1, .prix1, .prix2, .prix3
+{
+	font-family: 'Josefin sans', sans-serif;
+}
+.prix1
+{
+	color: green;
+}
+.prix2
+{
+	color: blue;
+}
+.prix3
+{
+	color: red;
+}

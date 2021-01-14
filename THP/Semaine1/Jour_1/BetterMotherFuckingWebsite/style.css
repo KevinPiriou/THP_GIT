@@ -1,0 +1,8 @@
+body,ul
+{
+	font-size: 18px;
+	margin : 40px auto;
+	max-width: 650px;
+	line-height: 1.4;
+	color:#443;
+}

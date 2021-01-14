@@ -1,0 +1,157 @@
+#Header
+{
+	font-family: "arial";
+	font-size: small; 
+	padding-top: 10px;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: row-reverse;
+}
+
+#Center
+{
+	padding-top:  160px;
+	display: flex;
+	justify-content: center;
+
+}
+#Recherche
+{
+	display: flex;
+	justify-content: center;
+	outline: 1px;
+	border-color: 
+	border : 5px;
+}
+
+
+#ButtonRecherche
+{
+	height: 21px;
+	font-family: "arial";
+	font-size: small; 
+	position: fixed;
+	left: 43%;
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+
+}
+#ButtonChance
+{
+	height: 21px;
+	font-family: "arial";
+	font-size: small; 
+	position: fixed;
+	left: 51%;
+	margin-top: 15px;
+	display: flex;
+	justify-content: center;
+}
+
+#bandeau
+{
+	
+	position: fixed;
+	width: 100%;
+	bottom: 40px;
+	line-height: 40px;
+	display: flex;
+	font-family: "arial";
+	align-content: flex-start;
+	background-color: #f2f2f2;
+	border-bottom: outset;
+	border-color: #dadce0;
+	margin-left: -7px;
+}
+
+#Footer
+{
+
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	line-height: 40px;
+	display: flex;
+	font-family: "arial";
+	justify-content: space-around;
+	background-color: #f2f2f2;
+	margin-left: -7px;
+}
+
+
+.Gmail
+{
+	margin-right: 11px;
+}
+
+.Images
+{
+	margin-right: 11px;
+}
+
+.Application
+{
+	margin-right: 5px;
+}
+
+.Connexion 
+{
+	margin-right: 5px;
+}
+
+.RechercheGoogle
+{
+	margin-right: 10px;
+}
+.button1
+{
+	height: 30px;
+	background-color:#f8f9fa;
+	color:#0d0d0d;
+	border-radius: 7px;
+	border: outset;
+}
+.buttonCo
+{
+	background-color: #0066ff;
+  border: none;
+  color: white;
+  padding: 10px 13px;
+  text-align: center;
+  cursor: pointer;
+}
+.ButtonAp
+{
+	background-color: #009933;
+  border: none;
+  color: white;
+  padding: 10px 13px;
+  text-align: center;
+  cursor: pointer;
+}
+a
+{
+	text-decoration: none;
+	color:#333;
+}
+a:hover:visited
+{
+	text-decoration: underline;
+	color:#444;
+}
+
+input
+{
+
+	border-radius: 10px;
+	border: outset;
+	height: 35px;
+	line-height: 35px;
+}
+
+form
+{
+	display: flex;
+	justify-content: center;
+}

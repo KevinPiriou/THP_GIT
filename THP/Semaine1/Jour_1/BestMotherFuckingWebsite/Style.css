@@ -1,0 +1,69 @@
+body,p
+{
+	font-family: Arial, Courier New, Times New Roman, Verdana, sans-serif;
+	font-size: medium;
+	margin : 40px auto;
+	max-width: 800px ;
+	line-height: 1.3;
+	font-size: 18px;
+	color: #454545;
+	text-align: justify;
+	
+}
+
+@keyframes Rouedecouleur 
+{
+    from, to { color: hsl(324, 70%, 45%); }
+    10%      { color: hsl(360, 65%, 45%); }
+    20%      { color: hsl( 36, 80%, 45%); }
+    30%      { color: hsl( 72, 75%, 35%); }
+    40%      { color: hsl(108, 65%, 35%); }
+    50%      { color: hsl(144, 75%, 35%); }
+    60%      { color: hsl(180, 75%, 35%); }
+    70%      { color: hsl(216, 60%, 45%); }
+    80%      { color: hsl(252, 65%, 50%); }
+    90%      { color: hsl(288, 60%, 40%); }
+}
+.DoWhatYouWant
+{
+	font-family: Courier New;
+}
+.CouleurText 
+{
+    color: hsl(324, 70%, 45%);
+    animation: Rouedecouleur 3s infinite;
+}
+.ImageFlottante
+{
+	float: left;
+	height: 250px;
+	width: 325px;
+}
+
+.pImage
+{
+	width: 15px;
+	height: 15px;
+}
+
+.Shitty
+{
+	color: blue;
+}
+
+.Violetish
+{
+	color: rgb(136,0,170);
+}
+.mini
+{
+	font-size: 8px;
+}
+.mfws
+{
+	color:maroon;
+}
+.wrong
+{
+	color:red;
+}

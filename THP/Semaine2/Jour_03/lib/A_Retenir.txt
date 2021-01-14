@@ -1,0 +1,78 @@
+4. Points importants à retenir
+Un programme est une suite d'instructions destinées à résoudre un problème bien défini. Ces instructions seront lues par un ordinateur qui va les appliquer sans réfléchir, dans l'ordre de leur lecture. Le travail du développeur est de déterminer quelles instructions doivent être effectuées et dans quel ordre afin de résoudre le problème. Il doit anticiper tous les cas envisageables afin d'éviter que l'ordinateur ne se retrouve dans une situation non prévue, synonyme de bug.
+
+Afin de tester facilement une instruction Ruby, on peut passer par l'IRB que l'on lance dans le terminal avec $ irb et que l'on quitte avec 2.5.1 :001 > quit.
+
+Un programme Ruby peut afficher des données dans le terminal avec la méthode puts. Il peut demander une information, sous forme de String, à l'utilisateur avec la méthode gets.chomp.
+
+Une variable est une "boîte" permettant de stocker une donnée et définie par son type (String, Integer, Float, Boolean, etc.) et sa valeur ("hello", 4, true, 5.6, etc.)
+
+On peut faire des opérations entre variables avec les opérateurs mathématiques classiques +, -, /, *. Auparavant, il faut s'assurer du type de donnée que renferme chaque variable, notamment avec .class.
+
+On peut facilement convertir une variable d'un type à l'autre avec les méthodes to_s (vers un String), to_i (vers un Integer) ou encore to_f (vers un Float).
+
+
+
+4. Points importants à retenir
+Les méthodes sont des petits robots-usines qui vous sont dévoués et qui exécuteront inlassablement les mêmes tâches pour vous : à vous de coder votre petite armée !
+
+Mais l'usage de méthode est aussi une technique indispensable pour bien ranger son code. Pour créer une méthode il faut faire :
+
+def ma_methode(local_variable)
+  # du code qu'elle exécutera à chaque fois
+end
+
+Et pour l'appeler (et lancer son exécution) :
+
+ma_methode(une_super_variable)
+
+Enfin, une bonne pratique est de ne pas faire dépasser 25 lignes à un4. Points importants à retenir
+Les méthodes sont des petits robots-usines qui vous sont dévoués et qui exécuteront inlassablement les mêmes tâches pour vous : à vous de coder votre petite armée !
+
+Mais l'usage de méthode est aussi une technique indispensable pour bien ranger son code. Pour créer une méthode il faut faire :
+
+def ma_methode(local_variable)
+  # du code qu'elle exécutera à chaque fois
+end
+
+Et pour l'appeler (et lancer son exécution) :
+
+ma_methode(une_super_variable)
+
+Enfin, une bonne pratique est de ne pas f4. Points importants à retenir
+Les méthodes sont des petits robots-usines qui vous sont dévoués et qui exécuteront inlassablement les mêmes tâches pour vous : à vous de coder votre petite armée !
+
+Mais l'usage de méthode est aussi une technique indispensable pour bien ranger son code. Pour créer une méthode il faut faire :
+
+def ma_methode(local_variable)
+  # du code qu'elle exécutera à chaque fois
+end
+
+Et pour l'appeler (et lancer son exécution) :
+
+ma_methode(une_super_variable)
+
+Enfin, une bonne pratique est de ne pas faire dépasser 25 lignes à une méthode. Si ta méthode dépasse 25 lignes, coupe-la en plusieurs méthodes remplissant chacune une petite partie du rôle de la méthode initiale.aire dépasser 25 lignes à une méthode. Si ta méthode dépasse 25 lignes, coupe-la en plusieurs méthodes remplissant chacune une petite partie du rôle de la méthode initiale.e méthode. Si ta méthode dépasse 25 lignes, coupe-la en plusieurs méthodes remplissant chacune une petite partie du rôle de la méthode initiale.
+
+
+
+
+
+4. Points importants à retenir
+Un array est un tableau (sur une ligne) qu'on déclare ainsi cities = ["Paris", "Lyon", "Montpellier"].
+Son index commence à zéro donc cities[0] = "Paris".
+Tu peux facilement modifier son contenu : cities[1] = "Marseille" donnera : cities = ["Paris", "Marseille", "Montpellier"]
+
+Il existe deux types de boucles simples : 9.times do (qui va répéter 9 fois les instructions) et for count in (1..5) qui va faire 5 tours avec la variable count qui pourra être appelée dans les instructions.
+
+On peut effectuer des boucles sur des array avec cities.each do |city| : la variable city va prendre comme valeur chaque entrée du array cities, une à une.
+La méthode map permet de faire une boucle qui retourne un array. La méthode map! va directement modifier l’array sur lequel elle est appliquée.
+
+Une boucle while permet de faire tourner du code en boucle en fonction d'une condition d'arrêt (et non plus sur un nombre de tours donnés). Ces boucles sont à utiliser avec parcimonie car elles peuvent facilement mener à des boucles infinies. Voici un exemple de boucle while qui compte jusqu'à 5 :
+
+# Count until 5
+i = 1
+while i <= 5
+  puts i
+  i += 1
+end
