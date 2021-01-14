@@ -62,8 +62,17 @@ end
 
 def handle_taille
   system('clear')
-  result_handle = @arr_journalist.count { |i| i.count "#{@arr_journalist}"}
-  puts result_handle
+  result_handle = {}
+  counter = 0
+  @arr_journalist.each do |handle|
+    counter = handle.length
+    if result_handle[counter].nil?
+        result_handle[counter] = 1
+      else
+        result_handle[counter] = result_handle[counter] + 1
+      end
+    end
+    result_handle.each{|caractere, value| puts "Il y a #{value} de handles qui ont #{caractere} caractères"}
 
 end
 
@@ -75,7 +84,6 @@ def recap
   result_court = @arr_journalist.sort_by(&:length)[0]
   alpha_array_sort = @arr_journalist.sort{|a,z| a <=> z}
   result_combien = @arr_journalist.select {|journalist| journalist.include? ("@")}
-  result_handle = 0
   system('clear')
   puts " Il y a #{result_combien.length} journalistes"
   puts " "
@@ -103,10 +111,10 @@ def recap
   sleep(5)
   puts " Voici la place de E-penser : #{result_epenser}"
   puts " "
-  sleep(2)
+  sleep(3)
   puts " Voici la répartition des handles :"
   puts " "
-  puts "#{result_handle}"
+  handle_taille()
   sleep(60)
 end
 
