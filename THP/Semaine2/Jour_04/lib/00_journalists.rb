@@ -61,7 +61,6 @@ end
 
 
 def handle_taille
-  system('clear')
   result_handle = {}
   counter = 0
   @arr_journalist.each do |handle|
@@ -130,7 +129,7 @@ def perfom
   puts " |===============================================|"
   puts "      [1] Combien de handle ?"
   puts " |===============================================|"
-  puts "      [2] Handle le plus court ?"
+  puts "      [2] Handle(s) le plus court ?"
   puts " |===============================================|"
   puts "      [3] Handle contenant 5 caractères ?"
   puts " |===============================================|"
