@@ -8,16 +8,16 @@ require 'colorize'
 
 def get_argv
 	if ARGV.empty?
-            puts "You need a folder name !".red
+            puts "You need a folder name !".red.bold
             puts ""
-    		puts "#=> ruby rubapp.rb Your_Folder".green
+    		puts "#=> ruby rubapp.rb Xxxxx".green.bold
     		abort""
     elsif
      	ARGV.first == "dish"
     	puts "lancement de methode secrete"
     	return ARGV.first
 	else
-		@name = ARGV.first
+		puts "▶▶ Creating App Process ◀◀".green.bold
 		return ARGV.first
 	end
 end
@@ -25,7 +25,7 @@ end
 # Creation des dossiers
 
 def ruby_and_lib_dir
-	puts " ▶ Initialise".blue.bold
+	puts " ▶ Initialise ".blue.bold
 	print ".".blue
 	sleep(1)
 	print "..".blue
@@ -35,10 +35,16 @@ def ruby_and_lib_dir
     sleep(0.5)
     Dir.mkdir(get_argv)
     Dir.mkdir("#{ARGV.join}/lib")
+    puts "▶ /lib created".yellow.bold
+    sleep(0.5)
+    Dir.mkdir("#{ARGV.join}/app")
+    puts "▶ /app created".yellow.bold
+    sleep(0.5)
     Dir.mkdir("#{ARGV.join}/db")
+    puts "▶ /db created".yellow.bold
+    sleep(0.5)
     Dir.mkdir("#{ARGV.join}/TRASH")
-    puts ""
-    puts "▶ /lib & /db & /TRASH created".yellow.bold
+    puts "▶ /TRASH created".yellow.bold
     sleep(2)
     puts "▶| Boot folder created |◀".green.bold
     sleep(2)
@@ -117,10 +123,10 @@ puts ""
 puts "### Reminder ### :".red.bold
 puts "▶▶ $ cd FolderName".cyan.bold
 puts "▶▶ $ bundle install".cyan.bold
-puts ""
+puts "--> YOU NEED CREATE A GIT DEPOT".green.bold
+puts "--> https://github.com/new".green.underline
 sleep(3)
 end
-# Lancement du programme
 
 def perform
     system("clear")
